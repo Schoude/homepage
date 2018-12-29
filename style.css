@@ -99,6 +99,10 @@ main {
 	background-color: #6de2e0;
 }
 
+.cta-btn-home {
+	animation-delay: 4s;
+}
+
 footer {
 	position: absolute;
 	bottom: 0;
