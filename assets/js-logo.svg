@@ -1,0 +1,39 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 80.551 113.386">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #e49016;
+      }
+
+      .cls-2 {
+        fill: #f4b009;
+      }
+
+      .cls-3 {
+        fill: #fff;
+      }
+
+      .cls-4 {
+        fill: #e6e6e6;
+      }
+
+      .cls-5 {
+        fill: #1a1818;
+      }
+    </style>
+  </defs>
+  <g id="Layer_1" data-name="Layer 1" transform="translate(-30.591 -14.173)">
+    <g id="Gruppe_3" data-name="Gruppe 3">
+      <path id="Pfad_1" data-name="Pfad 1" class="cls-1" d="M111.142,36.4H30.591l7.548,81.885,32.728,9.278h0l32.716-9.278Z"/>
+      <path id="Pfad_2" data-name="Pfad 2" class="cls-2" d="M70.866,43.066v77.559h0l26.5-7.513,6.454-70.046Z"/>
+      <path id="Pfad_3" data-name="Pfad 3" class="cls-3" d="M91.951,53.114H51.188l-2.833,30.66.06-.192H83.041l-1.13,12.969L70.866,99.735,59.652,96.5l-.673-7.849H48.8l1.455,15.685,20.612,5.854,20.612-5.854,2.837-30.78H57.573l.468-10.264h25.5l.375,5.875H94.19Z"/>
+      <g id="Gruppe_1" data-name="Gruppe 1">
+        <path id="Pfad_4" data-name="Pfad 4" class="cls-4" d="M70.866,53.114H51.188l-2.833,30.66.06-.192H70.866V73.559H58.991l.468-10.265H70.866ZM58.979,88.654H48.8l1.455,15.685,20.612,5.841V99.735L59.652,96.5Z"/>
+      </g>
+      <g id="Gruppe_2" data-name="Gruppe 2">
+        <path id="Pfad_5" data-name="Pfad 5" class="cls-5" d="M63.028,24.317H55.865v5.144h12.3V14.173H63.028Z"/>
+        <path id="Pfad_6" data-name="Pfad 6" class="cls-5" d="M85.868,14.251H73.374V19.6c1.67,1.672,2.543,2.472,4.961,4.89-1.414,0-4.961.005-4.961.005v4.884H85.868V24.5L80.878,19.6h4.99Z"/>
+      </g>
+    </g>
+  </g>
+</svg>
