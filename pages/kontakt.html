@@ -33,7 +33,68 @@
 		</div>
 
 		<main onclick="closeSlideMenu()">
-			<div><h1>Kontakt Platzhalter</h1></div>
+			<h3>
+				Habe ich Ihr Interesse geweckt und Sie möchten mit mir in
+				Verbindung treten?
+			</h3>
+
+			<h4>
+				Dann wählen Sie bite aus einer der folgenden
+				Kontaktmöglichkeiten:
+			</h4>
+
+			<div class="social-wrapper">
+				<a href="mailto:marcbaque1311@gmail.com"
+					><i class="fas fa-envelope fa-4x" style="color: #fff"></i
+				></a>
+				<a href="https://www.linkedin.com/in/marc-baque-633902128/"
+					><img
+						src="../assets/social-logos/linkedIn.png"
+						alt="linkedInd-logo"
+						class="social-logo"
+				/></a>
+				<a href="https://www.researchgate.net/profile/Marc_Baque"
+					><img
+						src="../assets/social-logos/researchgate.png"
+						alt="researchgate-logo"
+						class="social-logo"
+				/></a>
+				<a href="https://github.com/Schoude"
+					><img
+						src="../assets/social-logos/GitHub.png"
+						alt="github-logo"
+						class="social-logo"
+				/></a>
+			</div>
+			<h4>Oder senden Sie mir eine Anfrage über das Kontaktformular:</h4>
+			<div class="contactForm-wrapper">
+				<form action="submit">
+					<input
+						type="text"
+						name=""
+						id="name"
+						placeholder="Ihr Name"
+						required
+					/>
+
+					<input
+						type="email"
+						name=""
+						id="email"
+						placeholder="Ihre E-Mail"
+						required
+					/>
+
+					<textarea
+						name="contact-request"
+						id="contact-request"
+						placeholder="Ihre Nachricht..."
+						rows="4"
+						required
+					></textarea>
+					<a type="submit" class="btn">Abschicken</a>
+				</form>
+			</div>
 		</main>
 
 		<footer>&copy; 2018 Marc Baque</footer>
@@ -49,3 +110,51 @@
 		</script>
 	</body>
 </html>
+
+<style scoped>
+	main {
+		text-align: center;
+		padding-top: 0.5em;
+	}
+
+	h4 {
+		margin-top: 0;
+	}
+
+	.social-logo {
+		height: 50px;
+	}
+
+	.social-wrapper {
+		width: 100%;
+		display: flex;
+		justify-content: space-evenly;
+		align-items: center;
+		margin: 1em 0;
+	}
+
+	.contactForm-wrapper {
+		width: 90%;
+	}
+
+	form {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-gap: 0.5em;
+	}
+
+	input {
+	}
+
+	input,
+	textarea {
+		font-size: 1.1em;
+		font-family: 'Titillium Web', sans-serif;
+		padding-left: 0.2em;
+		width: 100%;
+	}
+
+	button {
+		border: none;
+	}
+</style>
