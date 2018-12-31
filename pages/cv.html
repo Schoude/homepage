@@ -33,7 +33,17 @@
 		</div>
 
 		<main onclick="closeSlideMenu()">
-			<div><h1>CV Platzhalter</h1></div>
+			<h2>Bildung</h2>
+			<div id="bildung-wrapper">
+				<h4>M.A. Politikwissenschaft, Universität Heidelberg 2018</h4>
+				<h4>
+					B.A. Sozialwissenschaften, Universität Koblenz-Landau 2015
+				</h4>
+				<h4>Abitur, Goethe-Gymnasium-Germersheim 2010</h4>
+			</div>
+
+			<h2>Web-Development Zertifikate</h2>
+			<div id="webdev-wrapper"></div>
 		</main>
 
 		<script type="text/javascript">
@@ -45,5 +55,18 @@
 				document.getElementById('side-menu').style.width = '0'
 			}
 		</script>
+
+		<style scoped>
+			main {
+				padding: 1em 0.6em 0 0.6em;
+			}
+
+			#bildung-wrapper {
+				text-align: left;
+			}
+			h2 {
+				margin-bottom: 0;
+			}
+		</style>
 	</body>
 </html>
