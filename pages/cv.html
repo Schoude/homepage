@@ -33,7 +33,7 @@
 		</div>
 
 		<main onclick="closeSlideMenu()">
-			<h2>Bildung</h2>
+			<h2>Ausbildung</h2>
 			<div id="bildung-wrapper">
 				<h4>M.A. Politikwissenschaft, Universität Heidelberg 2018</h4>
 				<h4>
@@ -45,23 +45,84 @@
 			<h2>Web-Development Zertifikate</h2>
 			<div id="webdev-wrapper">
 				<h3>Ausgestellt von freeCodeCamp:</h3>
+				<b>
+					<a
+						href="https://www.freecodecamp.org/certification/fcc13f20e67-f8ce-4661-a5fd-a083631af9ae/full-stack"
+						target="_blank"
+					>
+						Full Stack Certification</a
+					></b
+				>
+				bestehend aus folgenden Kursen:
 				<ul>
-					<li>
-						<b>
-							<a
-								href="https://www.freecodecamp.org/certification/fcc13f20e67-f8ce-4661-a5fd-a083631af9ae/full-stack"
-								target="_blank"
-							>
-								Full Stack Certification</a
-							></b
-						>
-					</li>
 					<li>Responsive Web Design</li>
 					<li>Javascript Algorithms And Data Structures</li>
 					<li>Front End Libraries</li>
 					<li>Data Visualization</li>
 					<li>Apis And Microservices</li>
 					<li>Information Security And Quality Assurance</li>
+				</ul>
+			</div>
+			<a href="../pages/portfolio.html" class="btn"
+				>Einblick in meine Arbeiten</a
+			>
+
+			<h2>Berufserfahrung und Praktika</h2>
+			<div id="erfahrung-wrapper">
+				<div class="zeitraum">seit 04/2015</div>
+				<div class="taetigkeit">
+					Werkstudent/Aushilfe,
+					<a href="http://www.cliqz.com" target="_blank">Cliqz GmbH</a
+					>, München <br />
+					<i>
+						Tätigkeit in der Qualitätskontrolle für die
+						Suchergebnisse einer Internet-Suchmaschine</i
+					>
+				</div>
+				<div class="zeitraum">04/2017 – 08/2017</div>
+				<div class="taetigkeit">
+					Praktikant, Forschungsprojekt
+					<a
+						href="https://www.tandfonline.com/doi/abs/10.1080/17419166.2017.1423471"
+						target="_blank"
+						>„Diktatorenendspiele“</a
+					>, Universität Heidelberg (Pflichtpraktikum) <br />
+					<i>
+						Selbstständige Erhebung länderspezifischer Daten für die
+						Erstellung eines quantitativen Datensatzes</i
+					>
+				</div>
+				<div class="zeitraum">08/2014 – 09/2014</div>
+				<div class="taetigkeit">
+					Praktikant, Tageszeitung
+					<a
+						href="https://www.rheinpfalz.de/lokal/landau/kreis-germersheim/"
+						target="_blank"
+						>DIE RHEINPFALZ</a
+					>, Germersheim <br />
+					<i>
+						Mitarbeit in der Redaktion des Lokalteils „Germersheimer
+						Rundschau“, selbstständiges Recherchieren und
+						Formulieren von Artikeln mit Veröffentlichung</i
+					>
+				</div>
+			</div>
+			<h2>Kenntnisse und Fähigkeiten</h2>
+			<div id="kenntnisse-wrapper">
+				<h3>Sprachkenntnisse:</h3>
+				<ul>
+					<li>English gut in Wort und Schrift</li>
+					<li>Koreanisch Grundkenntnisse</li>
+				</ul>
+				<h3>Computerkenntnisse:</h3>
+				<ul>
+					<li>MS Office</li>
+					<li>Stata</li>
+					<li>IBM SPSS Statistics</li>
+				</ul>
+				<h3>Sonstiges:</h3>
+				<ul>
+					<li>Führerschein Klasse B</li>
 				</ul>
 			</div>
 		</main>
@@ -78,18 +139,28 @@
 
 		<style scoped>
 			main {
-				padding: 1em 0.6em 0 0.6em;
+				padding: 0.2em 0.6em 0 0.6em;
 			}
 
 			#bildung-wrapper,
-			#webdev-wrapper {
+			#webdev-wrapper,
+			#erfahrung-wrapper,
+			#kenntnisse-wrapper {
 				text-align: left;
+			}
+
+			#erfahrung-wrapper {
+				display: grid;
+				grid-template-columns: 1fr 2fr;
+				grid-row-gap: 0.5em;
+				margin-top: 1.2em;
 			}
 			h2 {
 				margin-bottom: 0;
+				text-decoration: underline;
 			}
 			a {
-				text-decoration: none;
+				color: white;
 			}
 		</style>
 	</body>
