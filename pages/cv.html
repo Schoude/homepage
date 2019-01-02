@@ -35,7 +35,10 @@
 		<main onclick="closeSlideMenu()">
 			<h2>Ausbildung</h2>
 			<div id="bildung-wrapper">
-				<h4>M.A. Politikwissenschaft, Universität Heidelberg 2018</h4>
+				<h4>
+					M.A. Politikwissenschaft, Ruprecht-Karls-Universität
+					Heidelberg 2018
+				</h4>
 				<h4>
 					B.A. Sozialwissenschaften, Universität Koblenz-Landau 2015
 				</h4>
@@ -44,7 +47,21 @@
 
 			<h2>Web-Development Zertifikate</h2>
 			<div id="webdev-wrapper">
-				<h3>Ausgestellt von freeCodeCamp:</h3>
+				<div id="fcc-logo-wrapper">
+					<a
+						href="https://www.freecodecamp.org/"
+						target="_blank"
+						id="fcc-link"
+						>Ausgestellt von
+
+						<img
+							id="fcc-logo"
+							src="../assets/social-logos/freeCodeCamp.png"
+							alt="freeCodeCamp-logo"
+					/></a>
+					:
+				</div>
+
 				<b>
 					<a
 						href="https://www.freecodecamp.org/certification/fcc13f20e67-f8ce-4661-a5fd-a083631af9ae/full-stack"
@@ -147,6 +164,23 @@
 			#erfahrung-wrapper,
 			#kenntnisse-wrapper {
 				text-align: left;
+			}
+
+			#fcc-logo-wrapper {
+				font-size: 1.17em;
+				display: flex;
+				justify-content: flex-start;
+				margin: 1em 0;
+			}
+
+			#fcc-link {
+				display: flex;
+			}
+
+			#fcc-logo {
+				height: 1em;
+				align-self: center;
+				margin-left: 0.2em;
 			}
 
 			#erfahrung-wrapper {
