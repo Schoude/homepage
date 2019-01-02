@@ -33,7 +33,57 @@
 		</div>
 
 		<main onclick="closeSlideMenu()">
-			<div><h1>Portfolio Platzhalter</h1></div>
+			<div class="wrapper">
+				<h2>Mein derzeitiges Technology-Stack:</h2>
+				<section class="tech-stack-wrapper">
+					<img
+						class="tech-stack-badge"
+						src="../assets/tech-logos/HTML5_Logo.svg"
+						alt="html5-logo"
+					/>
+					<img
+						class="tech-stack-badge"
+						src="../assets/tech-logos/css3.svg"
+						alt="css3-logo"
+					/>
+					<img
+						class="tech-stack-badge"
+						src="../assets/tech-logos/js-logo.svg"
+						alt="js-logo"
+					/>
+					<img
+						class="tech-stack-badge"
+						src="../assets/tech-logos/node-logo.svg"
+						alt="nodejs-logo"
+					/>
+					<img
+						class="tech-stack-badge"
+						src="../assets/tech-logos/vue-logo.svg"
+						alt="vue-logo"
+					/>
+				</section>
+				<h2>Anwendungsbeispiele:</h2>
+				<section class="usages">
+					<div class="card">
+						<img
+							src="../assets/projects/weatherExplorer.png"
+							alt="weatherExplorer"
+						/>
+						<div class="card-content">
+							<a
+								href="https://schoude.github.io/api-fun/"
+								target="_blank"
+							>
+								Weather Explorer
+							</a>
+							<h4>Verwendete Technologien:</h4>
+							<ul>
+								<li>Node.js und API-Abfragen</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+			</div>
 		</main>
 
 		<script type="text/javascript">
@@ -45,5 +95,44 @@
 				document.getElementById('side-menu').style.width = '0'
 			}
 		</script>
+		<style scoped>
+			.tech-stack-wrapper {
+				display: grid;
+				grid-template-columns: 1fr 1fr 1fr;
+				justify-items: center;
+				row-gap: 1em;
+				padding: 0.5em 0.3em;
+				background-color: rgba(91, 192, 190, 0.5);
+				border-radius: 3px;
+			}
+			.tech-stack-badge {
+				height: 80px;
+			}
+
+			.card {
+				width: 100%;
+				background-color: rgba(91, 192, 190, 0.5);
+				border-radius: 0 0 3px 3px;
+			}
+
+			.card img {
+				width: 100%;
+				box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.5);
+			}
+			.card-content {
+				padding: 0 0.3em 0.5em 0.3em;
+			}
+			.card-content a {
+				color: white;
+				text-align: center;
+				font-size: 1.35em;
+				margin: 0 auto;
+				display: block;
+			}
+
+			.card-content h4 {
+				margin-bottom: 0;
+			}
+		</style>
 	</body>
 </html>
