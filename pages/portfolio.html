@@ -34,7 +34,7 @@
 
 		<main onclick="closeSlideMenu()">
 			<div class="wrapper">
-				<h2>Mein derzeitiges Technology-Stack:</h2>
+				<h2>Mein derzeitiges Core-Technology-Stack:</h2>
 				<section class="tech-stack-wrapper">
 					<img
 						class="tech-stack-badge"
@@ -51,15 +51,16 @@
 						src="../assets/tech-logos/js-logo.svg"
 						alt="js-logo"
 					/>
+					<a href="#vue">
+						<img
+							class="tech-stack-badge"
+							src="../assets/tech-logos/vue-logo.svg"
+							alt="vue-logo"
+					/></a>
 					<img
 						class="tech-stack-badge"
 						src="../assets/tech-logos/node-logo.svg"
 						alt="nodejs-logo"
-					/>
-					<img
-						class="tech-stack-badge"
-						src="../assets/tech-logos/vue-logo.svg"
-						alt="vue-logo"
 					/>
 				</section>
 				<h2>Anwendungsbeispiele:</h2>
@@ -74,11 +75,92 @@
 								href="https://schoude.github.io/api-fun/"
 								target="_blank"
 							>
-								Weather Explorer
+								Dienst zur Abfrage von Wetterdaten
 							</a>
 							<h4>Verwendete Technologien:</h4>
 							<ul>
-								<li>Node.js und API-Abfragen</li>
+								<li>HTML, CSS, API-Abfragen in JavaScript</li>
+								<li>Standortdienste</li>
+							</ul>
+						</div>
+					</div>
+					<div class="card">
+						<img
+							src="../assets/projects/worldMap.png"
+							alt="worldMap"
+						/>
+						<div class="card-content">
+							<a
+								href="https://schoude.github.io/topojson-world-map/"
+								target="_blank"
+							>
+								Zoombare Landkarte(n)
+							</a>
+							<h4>Verwendete Technologien:</h4>
+							<ul>
+								<li>HTML, CSS</li>
+								<li>D3.js zur Datenvisualisierung</li>
+							</ul>
+						</div>
+					</div>
+					<div class="card" id="vue">
+						<img
+							src="../assets/projects/realTimeChat.png"
+							alt="realTimeChat"
+						/>
+						<div class="card-content">
+							<a
+								href="https://pure-dawn-75220.herokuapp.com/"
+								target="_blank"
+							>
+								Multi-User Real-Time Web Chat
+							</a>
+							<h4>Verwendete Technologien:</h4>
+							<ul>
+								<li>HTML, CSS</li>
+								<li>Vue.js</li>
+								<li>node.js</li>
+							</ul>
+						</div>
+					</div>
+					<div class="card">
+						<img
+							src="../assets/projects/productList.png"
+							alt="productList"
+						/>
+						<div class="card-content">
+							<a
+								href="https://serene-temple-12531.herokuapp.com/#/"
+								target="_blank"
+							>
+								Produktliste/Warenkorb-Applikation
+							</a>
+							<h4>Verwendete Technologien:</h4>
+							<ul>
+								<li>HTML, CSS</li>
+								<li>Vue.js</li>
+								<li>node.js</li>
+							</ul>
+						</div>
+					</div>
+					<div class="card">
+						<img
+							src="../assets/projects/artistPortfolioMockup.png"
+							alt="artistPortfolioMockup"
+							id="artistPorfolio-img"
+						/>
+						<div class="card-content">
+							<a
+								href="https://jaeinko-artist.000webhostapp.com"
+								target="_blank"
+							>
+								Portfolio-Webseite für Künstler
+							</a>
+							<h4>Verwendete Technologien:</h4>
+							<ul>
+								<li>HTML, CSS</li>
+								<li>jQuery</li>
+								<li>Lightbox-Slideshow</li>
 							</ul>
 						</div>
 					</div>
@@ -113,6 +195,7 @@
 				width: 100%;
 				background-color: rgba(91, 192, 190, 0.5);
 				border-radius: 0 0 3px 3px;
+				margin-bottom: 1.3em;
 			}
 
 			.card img {
@@ -126,7 +209,7 @@
 				color: white;
 				text-align: center;
 				font-size: 1.35em;
-				margin: 0 auto;
+				margin: 0.3em auto 0;
 				display: block;
 			}
 
