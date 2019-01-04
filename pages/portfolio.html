@@ -35,35 +35,37 @@
 
 		<main onclick="closeSlideMenu()">
 			<div class="wrapper">
-				<h2>Mein derzeitiges Core-Technology-Stack:</h2>
-				<section class="tech-stack-wrapper">
-					<img
-						class="tech-stack-badge"
-						src="../assets/tech-logos/HTML5_Logo.svg"
-						alt="html5-logo"
-					/>
-					<img
-						class="tech-stack-badge"
-						src="../assets/tech-logos/css3.svg"
-						alt="css3-logo"
-					/>
-					<img
-						class="tech-stack-badge"
-						src="../assets/tech-logos/js-logo.svg"
-						alt="js-logo"
-					/>
-					<a href="#vue">
+				<div class="stackWrapper">
+					<h2>Mein derzeitiges Core-Technology-Stack:</h2>
+					<section class="tech-stack-wrapper">
 						<img
 							class="tech-stack-badge"
-							src="../assets/tech-logos/vue-logo.svg"
-							alt="vue-logo"
-					/></a>
-					<img
-						class="tech-stack-badge"
-						src="../assets/tech-logos/node-logo.svg"
-						alt="nodejs-logo"
-					/>
-				</section>
+							src="../assets/tech-logos/HTML5_Logo.svg"
+							alt="html5-logo"
+						/>
+						<img
+							class="tech-stack-badge"
+							src="../assets/tech-logos/css3.svg"
+							alt="css3-logo"
+						/>
+						<img
+							class="tech-stack-badge"
+							src="../assets/tech-logos/js-logo.svg"
+							alt="js-logo"
+						/>
+						<a href="#vue">
+							<img
+								class="tech-stack-badge"
+								src="../assets/tech-logos/vue-logo.svg"
+								alt="vue-logo"
+						/></a>
+						<img
+							class="tech-stack-badge"
+							src="../assets/tech-logos/node-logo.svg"
+							alt="nodejs-logo"
+						/>
+					</section>
+				</div>
 				<h2>Anwendungsbeispiele:</h2>
 				<section class="usages">
 					<div class="card">
@@ -80,7 +82,8 @@
 							</a>
 							<h4>Verwendete Technologien:</h4>
 							<ul>
-								<li>HTML, CSS, API-Abfragen in JavaScript</li>
+								<li>HTML, CSS</li>
+								<li>API-Abfrage in JavaScript</li>
 								<li>Standortdienste</li>
 							</ul>
 						</div>
@@ -122,6 +125,26 @@
 								<li>Vue.js</li>
 								<li>node.js</li>
 								<li>Firebase als Datenbank</li>
+							</ul>
+						</div>
+					</div>
+					<div class="card">
+						<img
+							src="../assets/projects/ronSwansonQuotes.png"
+							alt="ronSwansonQuotes"
+						/>
+						<div class="card-content">
+							<a
+								href="https://schoude.github.io/ron-swanson-quotes/"
+								target="_blank"
+							>
+								Zufällige Zitate von Ron Swanson
+							</a>
+							<h4>Verwendete Technologien:</h4>
+							<ul>
+								<li>HTML, CSS</li>
+								<li>Vue.js</li>
+								<li>API-Abfrage in JavaScript</li>
 							</ul>
 						</div>
 					</div>
@@ -219,7 +242,7 @@
 				box-shadow: 0px 3px 10px 0px rgba(0, 0, 0, 0.5);
 			}
 			.card-content {
-				padding: 0 0.3em 0.5em 0.3em;
+				padding: 0 0.5em 0.5em 0.5em;
 			}
 			.card-content a {
 				color: white;
@@ -239,6 +262,24 @@
 
 			.cta-contact p {
 				font-size: 1.17em;
+			}
+
+			@media only screen and (min-width: 769px) {
+				.stackWrapper {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+				}
+
+				.tech-stack-wrapper {
+					width: 50%;
+				}
+
+				.usages {
+					display: grid;
+					grid-template-columns: 1fr 1fr 1fr;
+					grid-column-gap: 1em;
+				}
 			}
 		</style>
 	</body>
