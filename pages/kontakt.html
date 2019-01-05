@@ -73,26 +73,27 @@
 			</div>
 			<h4>Oder senden Sie mir eine Anfrage über das Kontaktformular:</h4>
 			<div class="contactForm-wrapper">
-				<form action="submit">
+				<div class="alert">Ihre Nachricht wurde versendet!</div>
+				<form id="contactForm" action="submit">
 					<input
 						type="text"
-						name=""
-						id="name"
+						name="name"
+						id="name-input"
 						placeholder="Ihr Name"
 						required
 					/>
 
 					<input
 						type="email"
-						name=""
-						id="email"
+						name="email"
+						id="email-input"
 						placeholder="Ihre E-Mail"
 						required
 					/>
 
 					<textarea
-						name="contact-request"
-						id="contact-request"
+						name="nachricht"
+						id="nachricht-input"
 						placeholder="Ihre Nachricht..."
 						rows="4"
 						required
@@ -101,7 +102,8 @@
 				</form>
 			</div>
 		</main>
-
+		<!-- FIREBASE CONNECTION -->
+		<script src="https://www.gstatic.com/firebasejs/5.5.4/firebase.js"></script>
 		<script type="text/javascript">
 			function openSlideMenu() {
 				document.getElementById('side-menu').style.width = '250px'
@@ -109,6 +111,67 @@
 
 			function closeSlideMenu() {
 				document.getElementById('side-menu').style.width = '0'
+			}
+		</script>
+		<script>
+			// Initialize Firebase (is essentially a NoSQL-Database (unrelational Database -> Collections))
+			var config = {
+				apiKey: 'AIzaSyDo1z5Bezda00zo5T0hq-rm6ziWEAXUsQg',
+				authDomain: 'contact-form-f7d40.firebaseapp.com',
+				databaseURL: 'https://contact-form-f7d40.firebaseio.com',
+				projectId: 'contact-form-f7d40',
+				storageBucket: 'contact-form-f7d40.appspot.com',
+				messagingSenderId: '157689303144'
+			}
+			firebase.initializeApp(config)
+
+			// Referenz für die Collection der Kontaktanfragen
+			let messagesRef = firebase.database().ref('messages')
+
+			//Eventlistener und Funktion zum Absenden an das Kontaktformular anfügen
+			document
+				.getElementById('contactForm')
+				.addEventListener('submit', submitForm)
+
+			// Funktion, die die Daten bei submit and firebase sendet
+			function submitForm(e) {
+				e.preventDefault()
+
+				// Werte aus der Eingabe speichern
+				let name = getInputVal('name-input')
+				let email = getInputVal('email-input')
+				let nachricht = getInputVal('nachricht-input')
+
+				//Eingaben in die Datenbank-Referenz speichern und senden
+				saveMessage(name, email, nachricht)
+
+				// Alert-Div anzeigen
+				document.querySelector('.alert').style.display = 'block'
+
+				// Alert-Div nach 3 sekunden ausblenden
+				setTimeout(() => {
+					document.querySelector('.alert').style.display = 'none'
+				}, 3000)
+
+				// Formulareingaben leeren
+				document.getElementById('contactForm').reset()
+			}
+
+			//****HELFER-FUNKTIONEN
+
+			// Werte aus den Eingaben speichern
+			function getInputVal(id) {
+				return document.getElementById(id).value
+			}
+
+			// Werte aus den Eingaben in Firebase-Collection speichern
+			function saveMessage(name, email, nachricht) {
+				let newMessageRef = messagesRef.push()
+				newMessageRef.set({
+					name,
+					email,
+					nachricht
+				})
 			}
 		</script>
 	</body>
@@ -159,5 +222,14 @@
 		font-family: 'Titillium Web', sans-serif;
 		border: none;
 		width: 100%;
+	}
+	.alert {
+		display: none;
+		text-align: center;
+		padding: 10px;
+		background: #79c879;
+		color: black;
+		margin-bottom: 10px;
+		font-size: 1.2em;
 	}
 </style>
