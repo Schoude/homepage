@@ -223,6 +223,25 @@
 							target="_blank"
 						>
 						<img
+							src="../assets/projects/worldMap.png"
+							alt="worldMap"
+						/>
+						<div class="card-content">
+							<a
+								href="https://schoude.github.io/topojson-world-map/"
+								target="_blank"
+							>
+								Zoombare Landkarte(n)
+							</a>
+							<h4>Verwendete Technologien:</h4>
+							<ul>
+								<li>HTML, CSS</li>
+								<li>D3.js zur Datenvisualisierung</li>
+							</ul>
+						</div>
+					</div>
+					<div class="card">
+						<img
 							src="../assets/projects/artistPortfolioMockup.png"
 							alt="artistPortfolioMockup"
 							id="artistPorfolio-img"
@@ -333,6 +352,7 @@
 				}
 
 				.usages {
+					padding: 0 2em;
 					display: grid;
 					grid-template-columns: 1fr 1fr 1fr;
 					grid-column-gap: 1em;
@@ -358,6 +378,28 @@
 					grid-template-columns: repeat(5, 1fr);
 					grid-column-gap: 1em;
 					padding: 0 2em;
+				}
+			}
+
+			@media only screen and (min-width: 1025px) {
+				.stackWrapper {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+				}
+
+				.tech-stack-wrapper {
+					width: 50%;
+				}
+
+				#bsp-heading {
+					margin-left: 2em;
+				}
+				.usages {
+					padding: 0 2em;
+					display: grid;
+					grid-template-columns: repeat(5, 1fr);
+					grid-column-gap: 1em;
 				}
 			}
 		</style>
