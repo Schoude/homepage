@@ -66,18 +66,20 @@
 						/>
 					</section>
 				</div>
-				<h2>Anwendungsbeispiele:</h2>
+				<h2 id="bsp-heading">Anwendungsbeispiele:</h2>
 				<section class="usages">
 					<div class="card">
+							<a
+							href="https://schoude.github.io/api-fun/"
+							target="_blank"
+						>
 						<img
 							src="../assets/projects/weatherExplorer.png"
 							alt="weatherExplorer"
 						/>
+					</a>
 						<div class="card-content">
-							<a
-								href="https://schoude.github.io/api-fun/"
-								target="_blank"
-							>
+							
 								Dienst zur Abfrage von Wetterdaten
 							</a>
 							<h4>Verwendete Technologien:</h4>
@@ -88,30 +90,42 @@
 							</ul>
 						</div>
 					</div>
-					<div class="card">
+					<div class="card" id="vue">
+							<a
+							href="https://news-headlines-vue.herokuapp.com/"
+							target="_blank"
+						>
 						<img
-							src="../assets/projects/worldMap.png"
-							alt="worldMap"
+							src="../assets/projects/newsAggregator.png"
+							alt="newsAggregator"
 						/>
+						</a>
 						<div class="card-content">
 							<a
-								href="https://schoude.github.io/topojson-world-map/"
+								href="https://news-headlines-vue.herokuapp.com/"
 								target="_blank"
 							>
-								Zoombare Landkarte(n)
+								Schlagzeilen verschiedener Nachrichtenportale
 							</a>
 							<h4>Verwendete Technologien:</h4>
 							<ul>
 								<li>HTML, CSS</li>
-								<li>D3.js zur Datenvisualisierung</li>
+								<li>Vue.js</li>
+								<li>node.js</li>
+								<li>API-Abfrage in JavaScript</li>
 							</ul>
 						</div>
 					</div>
-					<div class="card" id="vue">
+					<div class="card">
+							<a
+							href="https://pure-dawn-75220.herokuapp.com/"
+							target="_blank"
+						>
 						<img
 							src="../assets/projects/realTimeChat.png"
 							alt="realTimeChat"
 						/>
+						</a>
 						<div class="card-content">
 							<a
 								href="https://pure-dawn-75220.herokuapp.com/"
@@ -129,10 +143,15 @@
 						</div>
 					</div>
 					<div class="card">
+							<a
+							href="https://schoude.github.io/ron-swanson-quotes/"
+							target="_blank"
+						>
 						<img
 							src="../assets/projects/ronSwansonQuotes.png"
 							alt="ronSwansonQuotes"
 						/>
+						</a>
 						<div class="card-content">
 							<a
 								href="https://schoude.github.io/ron-swanson-quotes/"
@@ -149,10 +168,15 @@
 						</div>
 					</div>
 					<div class="card">
+							<a
+							href="https://serene-temple-12531.herokuapp.com/#/"
+							target="_blank"
+						>
 						<img
 							src="../assets/projects/productList.png"
 							alt="productList"
 						/>
+						</a>
 						<div class="card-content">
 							<a
 								href="https://serene-temple-12531.herokuapp.com/#/"
@@ -170,11 +194,40 @@
 						</div>
 					</div>
 					<div class="card">
+							<a
+							href="https://schoude.github.io/topojson-world-map/"
+							target="_blank"
+						>
+						<img
+							src="../assets/projects/worldMap.png"
+							alt="worldMap"
+						/>
+						</a>
+						<div class="card-content">
+							<a
+								href="https://schoude.github.io/topojson-world-map/"
+								target="_blank"
+							>
+								Zoombare Landkarte(n)
+							</a>
+							<h4>Verwendete Technologien:</h4>
+							<ul>
+								<li>HTML, CSS</li>
+								<li>D3.js zur Datenvisualisierung</li>
+							</ul>
+						</div>
+					</div>
+					<div class="card">
+							<a
+							href="https://jaeinko-artist.000webhostapp.com"
+							target="_blank"
+						>
 						<img
 							src="../assets/projects/artistPortfolioMockup.png"
 							alt="artistPortfolioMockup"
 							id="artistPorfolio-img"
 						/>
+							</a>
 						<div class="card-content">
 							<a
 								href="https://jaeinko-artist.000webhostapp.com"
@@ -264,7 +317,7 @@
 				font-size: 1.17em;
 			}
 
-			@media only screen and (min-width: 769px) {
+			@media only screen and (min-width: 768px) {
 				.stackWrapper {
 					display: flex;
 					flex-direction: column;
@@ -275,10 +328,36 @@
 					width: 50%;
 				}
 
+				#bsp-heading {
+					margin-left: 2em;
+				}
+
 				.usages {
 					display: grid;
 					grid-template-columns: 1fr 1fr 1fr;
 					grid-column-gap: 1em;
+					padding: 0 2em;
+				}
+			}
+
+			@media only screen and (min-width: 1025px) {
+				.stackWrapper {
+					display: flex;
+					flex-direction: column;
+					align-items: center;
+				}
+
+				.tech-stack-wrapper {
+					width: 50%;
+				}
+				#bsp-heading {
+					margin-left: 2em;
+				}
+				.usages {
+					display: grid;
+					grid-template-columns: repeat(5, 1fr);
+					grid-column-gap: 1em;
+					padding: 0 2em;
 				}
 			}
 		</style>
