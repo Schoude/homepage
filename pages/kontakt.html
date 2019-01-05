@@ -73,7 +73,9 @@
 			</div>
 			<h4>Oder senden Sie mir eine Anfrage über das Kontaktformular:</h4>
 			<div class="contactForm-wrapper">
-				<div class="alert">Ihre Nachricht wurde versendet!</div>
+				<div class="alert animated flipInX">
+					Ihre Nachricht wurde versendet!
+				</div>
 				<form id="contactForm" action="submit">
 					<input
 						type="text"
@@ -150,8 +152,13 @@
 
 				// Alert-Div nach 3 sekunden ausblenden
 				setTimeout(() => {
-					document.querySelector('.alert').style.display = 'none'
+					document.querySelector('.alert').classList.add('flipOutX')
+					/* document.querySelector('.alert').style.display = 'none' */
 				}, 3000)
+
+				setTimeout(() => {
+					document.querySelector('.alert').style.display = 'none'
+				}, 4000)
 
 				// Formulareingaben leeren
 				document.getElementById('contactForm').reset()
