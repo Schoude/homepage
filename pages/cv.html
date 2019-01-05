@@ -46,8 +46,25 @@
 				<h4>Abitur, Goethe-Gymnasium-Germersheim 2010</h4>
 			</div>
 
-			<h2>Web-Development Zertifikate</h2>
+			<h2>Web-Development</h2>
+			<div class="webDev-desc">
+				<p>
+					Seit Oktober 2018 erarbeite ich mir einen Wissenstand im
+					Bereich der <b> Front-End-Webentwicklung</b> mit dem Ziel in
+					der Branche beruflich Fuß zu fassen. Dabei lerne ich im
+					Selbststudium und bediene mich der zahlreichen
+					Lernressourcen, die das Internet zu bieten hat.
+				</p>
+				<p>
+					Die unterhalb aufgeführte Zertifizierung legt den
+					Schwerpunkt der Wissensvermittlung auf das Front-End, führt
+					aber auch bis zu einem mittleren Niveau in die
+					Back-End-Entwicklung ein.
+				</p>
+			</div>
+
 			<div id="webdev-wrapper">
+				<h3>Zertifizierung</h3>
 				<div id="fcc-logo-wrapper">
 					<a
 						href="https://www.freecodecamp.org/"
@@ -151,10 +168,12 @@
 		<script type="text/javascript">
 			function openSlideMenu() {
 				document.getElementById('side-menu').style.width = '250px'
+				document.querySelector('main').style.marginLeft = '250px'
 			}
 
 			function closeSlideMenu() {
 				document.getElementById('side-menu').style.width = '0'
+				document.querySelector('main').style.marginLeft = '0'
 			}
 		</script>
 
@@ -168,6 +187,11 @@
 			#erfahrung-wrapper,
 			#kenntnisse-wrapper {
 				text-align: left;
+			}
+
+			.webDev-desc p {
+				text-align: justify;
+				hyphens: auto;
 			}
 
 			#fcc-logo-wrapper {

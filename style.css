@@ -10,6 +10,7 @@ body {
 	background-color: #1c2541;
 	padding-bottom: 40px;
 	height: 100%;
+	overflow-x: hidden;
 }
 
 header {
@@ -43,7 +44,7 @@ header {
 	opacity: 0.9;
 	overflow-x: hidden;
 	padding-top: 40px;
-	transition: 0.5s;
+	transition: width 0.5s;
 }
 
 .sidenav a {
@@ -53,7 +54,7 @@ header {
 	font-weight: bold;
 	color: #0b132b;
 	display: block;
-	transition: 0.3s;
+	transition: width 0.2s;
 }
 
 .sidenav a:hover {
@@ -75,6 +76,8 @@ main {
 	padding: 1em 0.6em 0 0.6em;
 	height: 100vh;
 	color: #fff;
+	transition: margin-left 0.4s;
+	width: 95%;
 }
 
 #profilbild {
