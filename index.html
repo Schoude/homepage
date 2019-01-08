@@ -59,6 +59,60 @@
 			>
 		</main>
 
+		<style>
+			@media only screen and (min-width: 1025px) {
+				body {
+					background-color: #5bc0be;
+					padding: 0;
+				}
+
+				main {
+					width: 100%;
+					background: url(./assets/bg-curve.svg) no-repeat bottom
+						center;
+					display: grid;
+					grid-template-areas:
+						'greeting  profilbild'
+						' .  cta-btn ';
+				}
+
+				#profilbild {
+					grid-area: profilbild;
+					width: 19em;
+					margin-right: 12em;
+					margin-top: 3em;
+					padding-right: 2em;
+				}
+				#greeting {
+					text-align: left;
+					grid-area: greeting;
+					justify-self: center;
+					align-self: center;
+					padding-top: 10em;
+					padding-left: 3em;
+				}
+
+				#greeting h2 {
+					font-size: 2.4em;
+				}
+
+				#greeting h3 {
+					font-size: 1.7em;
+				}
+
+				#greeting p {
+					font-size: 1.5em;
+					width: 70%;
+				}
+				.cta-btn-home {
+					align-self: start;
+					justify-self: start;
+					grid-area: cta-btn;
+					margin-left: 0.5em;
+				}
+			}
+		</style>
+
 		<script type="text/javascript">
 			function openSlideMenu() {
 				document.getElementById('side-menu').style.width = '250px'

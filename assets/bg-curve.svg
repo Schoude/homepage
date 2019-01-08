@@ -1,1 +1,14 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920.147 855.506"><defs><style>.a{fill:url(#a);}</style><linearGradient id="a" x1="0.11" y1="0.317" x2="1.045" y2="0.854" gradientUnits="objectBoundingBox"><stop offset="0" stop-color="#1c2541"/><stop offset="1" stop-color="#3a4588"/></linearGradient></defs><path class="a" d="M-3.047,1080.039l1919.921.441.17-806.954S1758.05,499.184,1542.349,616.406C1156.481,826.1,544.886,86.39,182.684,248.368,106.675,282.36-3.1,359.065-3.1,359.065Z" transform="translate(3.104 -224.975)"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1928.051 769.634">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: url(#linear-gradient);
+      }
+    </style>
+    <linearGradient id="linear-gradient" x1="0.11" y1="0.317" x2="1.045" y2="0.854" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#1c2541"/>
+      <stop offset="1" stop-color="#3a4588"/>
+    </linearGradient>
+  </defs>
+  <path id="Pfad_1" data-name="Pfad 1" class="cls-1" d="M-4.252,1085.714l1923.271-2.8,4.78-718.22s-158.977,225.962-374.656,343.341c-385.83,209.98-997.364-530.729-1359.53-368.533-76,34.038-193.718,110.128-193.718,110.128Z" transform="translate(4.252 -316.08)"/>
+</svg>
