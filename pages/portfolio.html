@@ -36,34 +36,53 @@
 		<main onclick="closeSlideMenu()">
 			<div class="wrapper">
 				<div class="stackWrapper">
-					<h2>Mein derzeitiges Core-Technology-Stack:</h2>
+					<h2>Mein derzeitiges Technology-Stack:</h2>
 					<section class="tech-stack-wrapper">
-						<img
-							class="tech-stack-badge"
-							src="../assets/tech-logos/HTML5_Logo.svg"
-							alt="html5-logo"
-						/>
-						<img
-							class="tech-stack-badge"
-							src="../assets/tech-logos/css3.svg"
-							alt="css3-logo"
-						/>
-						<img
-							class="tech-stack-badge"
-							src="../assets/tech-logos/js-logo.svg"
-							alt="js-logo"
-						/>
-						<a href="#vue">
+						<div class="skillbar-wrapper">
+							<img
+								class="tech-stack-badge"
+								src="../assets/tech-logos/HTML5_Logo.svg"
+								alt="html5-logo"
+								title="HTML 5"
+							/>
+							<progress max="100" value="80"></progress>
+						</div>
+						<div class="skillbar-wrapper">
+							<img
+								class="tech-stack-badge"
+								src="../assets/tech-logos/css3.svg"
+								alt="css3-logo"
+								title="CSS 3"
+							/>
+							<progress max="100" value="75"></progress>
+						</div>
+						<div class="skillbar-wrapper">
+							<img
+								class="tech-stack-badge"
+								src="../assets/tech-logos/js-logo.svg"
+								alt="js-logo"
+								title="JavaScript"
+							/>
+							<progress max="100" value="50"></progress>
+						</div>
+						<div class="skillbar-wrapper">
 							<img
 								class="tech-stack-badge"
 								src="../assets/tech-logos/vue-logo.svg"
 								alt="vue-logo"
-						/></a>
-						<img
-							class="tech-stack-badge"
-							src="../assets/tech-logos/node-logo.svg"
-							alt="nodejs-logo"
-						/>
+								title="Vue.js"
+							/>
+							<progress max="100" value="40"></progress>
+						</div>
+						<div class="skillbar-wrapper">
+							<img
+								class="tech-stack-badge"
+								src="../assets/tech-logos/node-logo.svg"
+								alt="nodejs-logo"
+								title="node.js"
+							/>
+							<progress max="100" value="30"></progress>
+						</div>
 					</section>
 				</div>
 				<h2 id="bsp-heading">Anwendungsbeispiele:</h2>
@@ -275,17 +294,28 @@
 			}
 		</script>
 		<style scoped>
+			.stackWrapper {
+				text-align: center;
+			}
+
 			.tech-stack-wrapper {
 				display: grid;
-				grid-template-columns: 1fr 1fr 1fr;
+				grid-template-columns: 1fr 1fr;
 				justify-items: center;
 				row-gap: 1em;
 				padding: 0.5em 0.3em;
 				background-color: rgba(91, 192, 190, 0.5);
 				border-radius: 3px;
 			}
+
+			.skillbar-wrapper {
+				display: flex;
+				flex-direction: column;
+			}
+
 			.tech-stack-badge {
 				height: 80px;
+				margin-bottom: 0.5em;
 			}
 
 			.card {
@@ -320,6 +350,29 @@
 
 			.cta-contact p {
 				font-size: 1.17em;
+			}
+
+			/* Progressbar styling */
+			progress[value] {
+				-webkit-appearance: none;
+				-moz-appearance: none;
+				appearance: none;
+				border: none;
+			}
+
+			progress[value]::-webkit-progress-bar {
+				background-color: whitesmoke;
+				border-radius: 5px;
+				box-shadow: 0 2px 3px rgba(0, 0, 0, 0.5) inset;
+			}
+
+			progress[value]::-webkit-progress-value {
+				border-radius: 5px;
+				background: #00da12;
+			}
+
+			progress[value]::-moz-progress-bar {
+				border-radius: 5px;
 			}
 
 			@media only screen and (min-width: 768px) {
