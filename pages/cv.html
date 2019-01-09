@@ -63,49 +63,64 @@
 					Back-End-Entwicklung ein.
 				</p>
 			</div>
+			<h3>Zertifizierungen</h3>
+			<div class="zertifizierung-wrapper">
+				<div id="webdev-wrapper">
+					<div id="fcc-logo-wrapper">
+						<a
+							href="https://www.freecodecamp.org/"
+							target="_blank"
+							id="fcc-link"
+							>Ausgestellt von
 
-			<div id="webdev-wrapper">
-				<h3>Zertifizierung</h3>
-				<div id="fcc-logo-wrapper">
+							<img
+								id="fcc-logo"
+								src="../assets/social-logos/freeCodeCamp.png"
+								alt="freeCodeCamp-logo"
+						/></a>
+						:
+					</div>
+
+					<b>
+						<a
+							href="https://www.freecodecamp.org/certification/fcc13f20e67-f8ce-4661-a5fd-a083631af9ae/full-stack"
+							target="_blank"
+						>
+							Full Stack Certification</a
+						></b
+					>
+					bestehend aus folgenden Kursen:
+					<ul>
+						<li>Responsive Web Design</li>
+						<li>Javascript Algorithms And Data Structures</li>
+						<li>Front End Libraries</li>
+						<li>Data Visualization</li>
+						<li>Apis And Microservices</li>
+						<li>Information Security And Quality Assurance</li>
+					</ul>
 					<a
-						href="https://www.freecodecamp.org/"
-						target="_blank"
-						id="fcc-link"
-						>Ausgestellt von
-
-						<img
-							id="fcc-logo"
-							src="../assets/social-logos/freeCodeCamp.png"
-							alt="freeCodeCamp-logo"
-					/></a>
-					:
+						href="../pages/portfolio.html"
+						class="btn"
+						style="margin-bottom: .5em; text-align: center;"
+						>Einblick in meine Arbeiten</a
+					>
 				</div>
 
-				<b>
+				<div class="googleZert-wrapper">
+					<h4>The Fundamentals of Digital Marketing</h4>
 					<a
-						href="https://www.freecodecamp.org/certification/fcc13f20e67-f8ce-4661-a5fd-a083631af9ae/full-stack"
-						target="_blank"
+						href="../assets/zertifikate/The Fundamentals of Digital Marketing - Google Digital Workshop Certification.pdf"
+						style="cursor: pointer;"
 					>
-						Full Stack Certification</a
-					></b
-				>
-				bestehend aus folgenden Kursen:
-				<ul>
-					<li>Responsive Web Design</li>
-					<li>Javascript Algorithms And Data Structures</li>
-					<li>Front End Libraries</li>
-					<li>Data Visualization</li>
-					<li>Apis And Microservices</li>
-					<li>Information Security And Quality Assurance</li>
-				</ul>
+						<img
+							src="../assets/zertifikate/Fundamentals of Digital Marketing.png"
+							alt="Fundamentals of Digital Marketing"
+							title="Fundamentals of Digital Marketing Certification"
+						/>
+					</a>
+					<h5>Ausgestellt von Google</h5>
+				</div>
 			</div>
-			<a
-				href="../pages/portfolio.html"
-				class="btn"
-				style="margin-bottom: .5em"
-				>Einblick in meine Arbeiten</a
-			>
-
 			<h2>Berufserfahrung und Praktika</h2>
 			<div id="erfahrung-wrapper">
 				<div class="zeitraum">seit 04/2015</div>
@@ -211,6 +226,13 @@
 				align-self: center;
 				margin-left: 0.2em;
 			}
+			.googleZert-wrapper {
+				text-align: center;
+			}
+
+			.googleZert-wrapper img {
+				width: 200px;
+			}
 
 			#erfahrung-wrapper {
 				display: grid;
@@ -262,6 +284,12 @@
 
 				li {
 					font-size: 1.1em;
+				}
+
+				.zertifizierung-wrapper {
+					display: grid;
+					grid-template-columns: 1fr 1fr;
+					grid-column-gap: 2em;
 				}
 			}
 		</style>
