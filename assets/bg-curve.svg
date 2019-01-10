@@ -1,4 +1,4 @@
-<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1928.051 769.634">
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920.2 763.923">
   <defs>
     <style>
       .cls-1 {
@@ -10,5 +10,5 @@
       <stop offset="1" stop-color="#3a4588"/>
     </linearGradient>
   </defs>
-  <path id="Pfad_1" data-name="Pfad 1" class="cls-1" d="M-4.252,1085.714l1923.271-2.8,4.78-718.22s-158.977,225.962-374.656,343.341c-385.83,209.98-997.364-530.729-1359.53-368.533-76,34.038-193.718,110.128-193.718,110.128Z" transform="translate(4.252 -316.08)"/>
+  <path id="Pfad_1" data-name="Pfad 1" class="cls-1" d="M-4.252,1080l1920.2,0-.147-712.691s-147.982,221.309-364.027,337.817C1165.291,913.549,552.72,178.34,189.941,339.331,113.811,373.116-4.252,448.767-4.252,448.767Z" transform="translate(4.252 -316.08)"/>
 </svg>
