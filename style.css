@@ -21,9 +21,22 @@ header {
 	align-items: center;
 }
 
+.header-right {
+	display: flex;
+	align-items: center;
+}
+
 .menu {
 	cursor: pointer;
 	color: #5bc0be;
+}
+
+.kontakt-icons {
+	margin-right: 3em;
+}
+
+.kontakt-icons a {
+	margin: 0 10px;
 }
 
 .logo {
