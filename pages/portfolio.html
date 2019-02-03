@@ -85,30 +85,89 @@
 						</div>
 					</section>
 				</div>
-				<h2 id="bsp-heading">Anwendungsbeispiele:</h2>
+				<h2 id="bsp-heading">Beispielanwendungen mit Vue.js:</h2>
 				<section class="usages">
-					<div class="card">
+					<div class="card" id="vue">
 						<a
-							href="https://schoude.github.io/api-fun/"
+							href="https://korea-informer.netlify.com/#/"
 							target="_blank"
 						>
 							<img
-								src="../assets/projects/weatherExplorer.png"
-								alt="weatherExplorer"
+								src="../assets/projects/korinformer.png"
+								alt="korea-informer"
 							/>
 						</a>
 						<div class="card-content">
 							<a
-								href="https://schoude.github.io/api-fun/"
+								href="https://korea-informer.netlify.com/#/"
 								target="_blank"
 							>
-								Dienst zur Abfrage von Wetterdaten
+								News-Blog über Korea (fiktiv)
 							</a>
 							<h4>Verwendete Technologien:</h4>
 							<ul>
 								<li>HTML, CSS</li>
+								<li>Vue.js, Vuex, Vue-Router</li>
 								<li>API-Abfrage in JavaScript</li>
-								<li>Standortdienste</li>
+								<li>node.js</li>
+								<li>
+									Eigene Backend-API mit Express und MongoDB
+								</li>
+							</ul>
+						</div>
+					</div>
+					<div class="card" id="vue">
+						<a
+							href="https://koreanisch.netlify.com/"
+							target="_blank"
+						>
+							<img
+								src="../assets/projects/korgram.png"
+								alt="vueazon"
+							/>
+						</a>
+						<div class="card-content">
+							<a
+								href="https://koreanisch.netlify.com/"
+								target="_blank"
+							>
+								Grammatiknachschlagewerk zu Koreanisch
+							</a>
+							<h4>Verwendete Technologien:</h4>
+							<ul>
+								<li>HTML, CSS</li>
+								<li>Vuepress Static-Site Generator</li>
+								<li>Markdown</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="card" id="vue">
+						<a
+							href="https://vueazon.netlify.com/#/"
+							target="_blank"
+						>
+							<img
+								src="../assets/projects/vueazon.png"
+								alt="vueazon"
+							/>
+						</a>
+						<div class="card-content">
+							<a
+								href="https://vueazon.netlify.com/#/"
+								target="_blank"
+							>
+								Simples Onlineshop Mock-up
+							</a>
+							<h4>Verwendete Technologien:</h4>
+							<ul>
+								<li>HTML, CSS</li>
+								<li>Vue.js, Vuex, Vue-Router</li>
+								<li>API-Abfrage in JavaScript</li>
+								<li>node.js</li>
+								<li>
+									Eigene Backend-API mit Express und MongoDB
+								</li>
 							</ul>
 						</div>
 					</div>
@@ -212,6 +271,50 @@
 								<li>Vue.js</li>
 								<li>node.js</li>
 								<li>Firebase als Datenbank</li>
+							</ul>
+						</div>
+					</div>
+				</section>
+				<div class="cta-contact contact-vue">
+					<p>
+						Arbeiten Sie schon mit <b>Vue.js</b> oder denken Sie
+						darüber nach ihren Workflow auf Vue.js umzustellen?
+					</p>
+					<p>
+						Dann nehmen Sie doch Kontakt mit mir auf! Ich würde Ihr
+						Team gerne bei der Arbeit mit Vue.js unterstützen.
+					</p>
+					<a
+						href="../pages/kontakt.html"
+						class="btn vue-cta"
+						style="text-align:center"
+						>Zur Kontaktaufnahme...</a
+					>
+				</div>
+				<h2 id="bsp-heading">Weitere Beispiele:</h2>
+				<section class="usages">
+					<div class="card">
+						<a
+							href="https://schoude.github.io/api-fun/"
+							target="_blank"
+						>
+							<img
+								src="../assets/projects/weatherExplorer.png"
+								alt="weatherExplorer"
+							/>
+						</a>
+						<div class="card-content">
+							<a
+								href="https://schoude.github.io/api-fun/"
+								target="_blank"
+							>
+								Dienst zur Abfrage von Wetterdaten
+							</a>
+							<h4>Verwendete Technologien:</h4>
+							<ul>
+								<li>HTML, CSS</li>
+								<li>API-Abfrage in JavaScript</li>
+								<li>Standortdienste</li>
 							</ul>
 						</div>
 					</div>
@@ -419,6 +522,16 @@
 					grid-template-columns: repeat(5, 1fr);
 					grid-column-gap: 1em;
 					padding: 0 2em;
+				}
+
+				.contact-vue {
+					text-align: center;
+				}
+
+				.vue-cta {
+					display: block;
+					margin: 0 auto;
+					width: 50%;
 				}
 			}
 
